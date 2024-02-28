@@ -20,9 +20,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
-  <Header />
   <main id="main-content">
     <section id="hero">
+      <Header />
       <h1>Joseph Seagal</h1>
       <p>
       
@@ -223,7 +223,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   /* ===== Hero Section ===== */
   #hero {
     @apply pb-6 pt-8 text-center;
-
+    max-width: 800px;
   }
   #hero h1 {
     @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
@@ -250,7 +250,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   #experience,
   #projects {
     @apply pb-6 pt-12;
-    max-width: 700px;
+    max-width: 800px;
   }
   #education h2,
   #skills h2,
@@ -289,6 +289,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   li {
   padding-left: 20px;
   text-indent: -20px;
+  margin-bottom: 10px;
   }
 
   li::before {
