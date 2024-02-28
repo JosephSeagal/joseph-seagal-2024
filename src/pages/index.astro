@@ -112,15 +112,30 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             <Hr />
 
             <div class="empty-line"></div>
+            
             <h3>National Board of Medical Examiners</h3>
             <i>Collaborative Services Engineer (Apr. 2023 - Sep. 2023)</i>
-            <ul>
+            <ul class="custom-bullets">
               <li>Configured servers for the deployment of EMS Office Hoteling and Desk Booking software (emssoftware.com),providing ongoing support and maintenance for optimal functionality, using Citrix workspace</li>
               <li>Utilized the ServiceNow ticketing system to assist internal users with a range of tools and software, includingSharePoint, MS Office, Uniflow, Citrix, EMS, and Microsoft Teams</li>
               <li>Collaborated with team members on troubleshooting, testing, and implementing of software upgrades on servers</li>
               <li>Designed and developed internal websites leveraging SharePoint tools to implement documentation libraries,lists, search functionality, and robust security and permissions features</li>
               <li>Provided support and administration for servers using Citrix Workspace, managing security and permissions</li>
             </ul>
+
+            <div class="empty-line"></div>
+
+            <h3>Drexel University</h3>
+            <i>Computer Technician (Sep. 2022 - Mar. 2023)</i>
+            <ul class="custom-bullets">
+              <li>Participated in testing, troubleshooting, and disassembling computer equipment for components used in repair</li>
+              <li>Utilized the ServiceNow ticketing system to assist internal users with a range of tools and software, includingSharePoint, MS Office, Uniflow, Citrix, EMS, and Microsoft Teams</li>
+              <li>Collaborated with team members on troubleshooting, testing, and implementing of software upgrades on servers</li>
+              <li>Designed and developed internal websites leveraging SharePoint tools to implement documentation libraries,lists, search functionality, and robust security and permissions features</li>
+              <li>Provided support and administration for servers using Citrix Workspace, managing security and permissions</li>
+            </ul>
+
+            <div class="empty-line"></div>
 
 
           </section>
@@ -215,6 +230,10 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   .orange-text {
     @apply text-orange-500 font-semibold tracking-wide;
     text-decoration: underline;
+  }
+  .custom-bullets {
+  list-style-type: square; /* Use square bullets */
+  color: red;
   }
 
 </style>
