@@ -59,15 +59,14 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         <>
           <section id="education">
             <h2>Education</h2>
-            <ul>
-              {featuredPosts.map(({ data, slug }) => (
-                <Card
-                  href={`/posts/${slug}/`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
+            <h3>Drexel University</h3>
+            <p>
+            Bachelor of Science in Computer Science
+            </p>
+            <h3>Relevant Coursework</h3>
+            <p>
+            Computing & Informatics Design I, II, III, Data Structures, Math Foundations of Computer Science, Advanced Programming Tools & Techniques, Computer Programming I, II, Software Architecture I
+            </p>
           </section>
           {recentPosts.length > 0 && <Hr />}
         </>
@@ -120,31 +119,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           <section id="projects">
             <h2>Projects</h2>
 
-
+            
 
           </section>
           {recentPosts.length > 0 && <Hr />}
         </>
-      )
-    }
-
-    {
-      recentPosts.length > 0 && (
-        <section id="recent-posts">
-          <h2>Recent Posts</h2>
-          <ul>
-            {recentPosts.map(
-              ({ data, slug }, index) =>
-                index < 4 && (
-                  <Card
-                    href={`/posts/${slug}/`}
-                    frontmatter={data}
-                    secHeading={false}
-                  />
-                )
-            )}
-          </ul>
-        </section>
       )
     }
 
