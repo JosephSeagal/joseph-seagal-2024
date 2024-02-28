@@ -24,7 +24,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <main id="main-content">
     <section id="hero">
       <h1>Joseph Seagal</h1>
-      
+      <p>
+      Phone Number: (267) 709 - 0112
+      josephseagal0@gmail.com
+      www.linkedin.com/in/joseph-seagal/
+      </p>
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
@@ -50,6 +54,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             <p>
             Bachelor of Science in Computer Science
             </p>
+            <div class="empty-line"></div>
             <h3>Relevant Coursework</h3>
             <p>
             Computing & Informatics Design I, II, III, Data Structures, Math Foundations of Computer Science, Advanced Programming Tools & Techniques, Computer Programming I, II, Software Architecture I
@@ -65,15 +70,21 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         <>
           <section id="skills">
             <h2>Skills</h2>
-            <ul>
-              {featuredPosts.map(({ data, slug }) => (
-                <Card
-                  href={`/posts/${slug}/`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
+            <div class="empty-line"></div>
+            <h3>Programming Languages:</h3>
+            <p>
+            Python, Java, C/C++, C#, JavaScript, Shell Scripts, Racket
+            </p>
+            <div class="empty-line"></div>
+            <h3>Developer Tools:</h3>
+            <p>
+            GitHub, GitLab, Visual Studio Code/Community, IntelliJ, Unity
+            </p>
+            <div class="empty-line"></div>
+            <h3>Other Tools and OS:</h3>
+            <p>
+            SharePoint, MS Office, Uniflow, Citrix, EMS, Microsoft Teams, Linux, Windows
+            </p>
           </section>
           {recentPosts.length > 0 && <Hr />}
         </>
