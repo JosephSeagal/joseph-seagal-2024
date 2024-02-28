@@ -129,15 +129,25 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             <i>Computer Technician (Sep. 2022 - Mar. 2023)</i>
             <ul class="custom-bullets">
               <li>Participated in testing, troubleshooting, and disassembling computer equipment for components used in repair</li>
-              <li>Utilized the ServiceNow ticketing system to assist internal users with a range of tools and software, includingSharePoint, MS Office, Uniflow, Citrix, EMS, and Microsoft Teams</li>
-              <li>Collaborated with team members on troubleshooting, testing, and implementing of software upgrades on servers</li>
-              <li>Designed and developed internal websites leveraging SharePoint tools to implement documentation libraries,lists, search functionality, and robust security and permissions features</li>
-              <li>Provided support and administration for servers using Citrix Workspace, managing security and permissions</li>
+              <li>Performed routine inspections of computer labs, verifying the operational status of computers and equipment</li>
+              <li>Assisted in IT customer support and the organization and disposal of computers, cables, equipment, and e-waste</li>
             </ul>
 
             <div class="empty-line"></div>
 
-
+            <h3>Seagal Solutions, INC</h3>
+            <i>Project Manager (June 2023 - Present)</i>
+            <ul class="custom-bullets">
+              <li>Participate in customer engagement through information collection, addressing inquiries and resolving issues</li>
+              <li>Schedule and take part in weekly meetings and team brainstorming sessions to facilitate effective communication</li>
+              <li>Review and assess company documentation such as statements of work and proposals to customers</li>
+            </ul>
+            <i>Technician (June 2021 - Sep. 2022)</i>
+            <ul class="custom-bullets">
+              <li>Conducted thorough quality assurance testing for a web-based password generation application and its processes</li>
+              <li>Configured Windows and Linux operating systems on servers exclusively dedicated to oncology research</li>
+              <li>Enhanced system performance by upgrading desktop motherboards, memory, SSDs, GPUs, and CPUs</li>
+            </ul>
           </section>
         </>
       )
@@ -233,7 +243,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
   .custom-bullets {
   list-style-type: square; /* Use square bullets */
-  color: red;
+  
+  padding-left: 20px;
+  }
+  .custom-bullets::marker {
+  @apply text-orange-500;
   }
 
 </style>
