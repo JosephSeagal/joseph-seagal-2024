@@ -24,17 +24,17 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <main id="main-content">
     <section id="hero">
       <h1>Joseph Seagal</h1>
-      <p>
-      Phone Number: (267) 709 - 0112
-      </p>
-      <p>
-      Email: josephseagal0@gmail.com
-      </p>
-      <a href="mailto:josephseagal0@gmail.com">josephseagal0@gmail.com</a>
-      <p>
-      LinkedIn: www.linkedin.com/in/joseph-seagal/
-      </p>
-      <a href="www.linkedin.com/in/joseph-seagal/">joseph-seagal</a>
+      {
+        <div class="social-wrapper">
+            <div class="social-links">Phone Number:</div>
+            (267) 709 - 0112
+            <div class="social-links">Email:</div>
+            <a href="mailto:josephseagal0@gmail.com">josephseagal0@gmail.com</a>
+            <div class="social-links">LinkedIn:</div>
+            <a href="https://www.linkedin.com/in/your-profile">joseph-seagal</a>
+        </div>
+      }
+
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
@@ -153,6 +153,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
   #hero h1 {
     @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+    text-align: center;
   }
   #hero .rss-link {
     @apply mb-6;
@@ -167,7 +168,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply mt-4 flex flex-col sm:flex-row sm:items-center;
   }
   .social-links {
-    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
+    @apply mr-2 whitespace-nowrap sm:mb-0;
   }
 
   /* ===== Featured & Recent Posts Sections ===== */
