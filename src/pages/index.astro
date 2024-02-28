@@ -115,7 +115,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             
             <h3>National Board of Medical Examiners</h3>
             <i>Collaborative Services Engineer (Apr. 2023 - Sep. 2023)</i>
-            <ul class="custom-bullets">
+            <ul>
               <li>Configured servers for the deployment of EMS Office Hoteling and Desk Booking software (emssoftware.com),providing ongoing support and maintenance for optimal functionality, using Citrix workspace</li>
               <li>Utilized the ServiceNow ticketing system to assist internal users with a range of tools and software, includingSharePoint, MS Office, Uniflow, Citrix, EMS, and Microsoft Teams</li>
               <li>Collaborated with team members on troubleshooting, testing, and implementing of software upgrades on servers</li>
@@ -127,7 +127,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
             <h3>Drexel University</h3>
             <i>Computer Technician (Sep. 2022 - Mar. 2023)</i>
-            <ul class="custom-bullets">
+            <ul>
               <li>Participated in testing, troubleshooting, and disassembling computer equipment for components used in repair</li>
               <li>Performed routine inspections of computer labs, verifying the operational status of computers and equipment</li>
               <li>Assisted in IT customer support and the organization and disposal of computers, cables, equipment, and e-waste</li>
@@ -137,13 +137,13 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
             <h3>Seagal Solutions, INC</h3>
             <i>Project Manager (June 2023 - Present)</i>
-            <ul class="custom-bullets">
+            <ul>
               <li>Participate in customer engagement through information collection, addressing inquiries and resolving issues</li>
               <li>Schedule and take part in weekly meetings and team brainstorming sessions to facilitate effective communication</li>
               <li>Review and assess company documentation such as statements of work and proposals to customers</li>
             </ul>
             <i>Technician (June 2021 - Sep. 2022)</i>
-            <ul class="custom-bullets">
+            <ul>
               <li>Conducted thorough quality assurance testing for a web-based password generation application and its processes</li>
               <li>Configured Windows and Linux operating systems on servers exclusively dedicated to oncology research</li>
               <li>Enhanced system performance by upgrading desktop motherboards, memory, SSDs, GPUs, and CPUs</li>
@@ -241,13 +241,21 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply text-orange-500 font-semibold tracking-wide;
     text-decoration: underline;
   }
-  .custom-bullets {
-  list-style-type: square; /* Use square bullets */
-  list-style-color: orange;
-  padding-left: 20px;
+
+  ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   }
-  .custom-bullets::marker {
-  @apply text-orange-500;
+
+  li {
+  padding-left: 1em; 
+  text-indent: -.7em;
+  }
+
+  li::before {
+  content: "• ";
+  color: red; /* or whatever color you prefer */
   }
 
 </style>
