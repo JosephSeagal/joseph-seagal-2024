@@ -9,7 +9,7 @@ import LinkButton from "./LinkButton.astro";
 
 const { activeNav } = Astro.props;
 ---
-{/*
+
 <header>
   <a id="skip-to-content" href="#main-content">Skip to content</a>
   <div class="nav-container">
@@ -31,6 +31,7 @@ const { activeNav } = Astro.props;
       </a>
 */}
 
+{/*
           <div 
               style={{
               width: `${LOGO_IMAGE.width}px`,
@@ -38,6 +39,7 @@ const { activeNav } = Astro.props;
               backgroundColor: 'gray', // Set your desired background color here
               }}
             />
+*/}
 
       <nav id="nav-menu">
         <button
@@ -102,6 +104,8 @@ const { activeNav } = Astro.props;
             </LinkButton>
           </li>
 */}
+
+{/*
           {
             SITE.lightAndDarkMode && (
               <li>
@@ -122,13 +126,14 @@ const { activeNav } = Astro.props;
               </li>
             )
           }
+*/}
         </ul>
       </nav>
     </div>
   </div>
   <Hr />
 </header>
-*/}
+
 
 
 <style>
