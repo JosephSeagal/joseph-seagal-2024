@@ -50,13 +50,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     </section>
 
-    <Hr />
-
     {
       featuredPosts.length > 0 && (
         <>
           <section id="education">
-            <h2>Education</h2>
+            <h2>Education</h2><Hr />
 
             <div class="empty-line"></div>
 
@@ -71,7 +69,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             </p>
             <div class="empty-line"></div>
           </section>
-          {recentPosts.length > 0 && <Hr />}
         </>
       )
     }
@@ -80,7 +77,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="skills">
-            <h2>Skills</h2>
+            <h2>Skills</h2><Hr />
             <div class="empty-line"></div>
             <h3>Programming Languages:</h3>
             <p>
@@ -97,7 +94,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             SharePoint, MS Office, Uniflow, Citrix, EMS, Microsoft Teams, Linux, Windows
             </p>
           </section>
-          {recentPosts.length > 0 && <Hr />}
         </>
       )
     }
