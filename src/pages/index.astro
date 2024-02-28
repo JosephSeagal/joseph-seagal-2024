@@ -106,6 +106,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="experience">
+          
             <h2>Experience</h2>
             <div class="empty-line"></div>
 
@@ -113,10 +114,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
             <div class="empty-line"></div>
             
-            <h3>National Board of Medical Examiners</h3>
+
+            {
+              <div><h3>National Board of Medical Examiners</h3></div>
+              (<a href="https://www.nbme.org/"><span class="orange-text">www.nbme.org</span></a>)
+              </div>
+            }
             <i>Collaborative Services Engineer (Apr. 2023 - Sep. 2023)</i>
             <ul>
-              <li>Configured servers for the deployment of EMS Office Hoteling and Desk Booking software (emssoftware.com),providing ongoing support and maintenance for optimal functionality, using Citrix workspace</li>
+              <li>Configured servers for the deployment of EMS Office Hoteling and Desk Booking software (<a href="https://www.emssoftware.com/"><span class="orange-text">emssoftware.com</span></a>),providing ongoing support and maintenance for optimal functionality, using Citrix workspace</li>
               <li>Utilized the ServiceNow ticketing system to assist internal users with a range of tools and software, includingSharePoint, MS Office, Uniflow, Citrix, EMS, and Microsoft Teams</li>
               <li>Collaborated with team members on troubleshooting, testing, and implementing of software upgrades on servers</li>
               <li>Designed and developed internal websites leveraging SharePoint tools to implement documentation libraries,lists, search functionality, and robust security and permissions features</li>
@@ -285,6 +291,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   li::before {
   content: "• ";
   //color: red; /* or whatever color you prefer */
+  }
+
+  .label {
+     display: inline-block;
+     width: 200px; // or whatever
   }
 
 </style>
