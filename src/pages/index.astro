@@ -57,8 +57,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     {
       featuredPosts.length > 0 && (
         <>
-          <section id="featured">
-            <h2>Featured</h2>
+          <section id="education">
+            <h2>Education</h2>
             <ul>
               {featuredPosts.map(({ data, slug }) => (
                 <Card
@@ -68,6 +68,60 @@ const socialCount = SOCIALS.filter(social => social.active).length;
                 />
               ))}
             </ul>
+          </section>
+          {recentPosts.length > 0 && <Hr />}
+        </>
+      )
+    }
+
+    {
+      featuredPosts.length > 0 && (
+        <>
+          <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+              {featuredPosts.map(({ data, slug }) => (
+                <Card
+                  href={`/posts/${slug}/`}
+                  frontmatter={data}
+                  secHeading={false}
+                />
+              ))}
+            </ul>
+          </section>
+          {recentPosts.length > 0 && <Hr />}
+        </>
+      )
+    }
+
+    {
+      featuredPosts.length > 0 && (
+        <>
+          <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+              {featuredPosts.map(({ data, slug }) => (
+                <Card
+                  href={`/posts/${slug}/`}
+                  frontmatter={data}
+                  secHeading={false}
+                />
+              ))}
+            </ul>
+          </section>
+          {recentPosts.length > 0 && <Hr />}
+        </>
+      )
+    }
+
+    {
+      featuredPosts.length > 0 && (
+        <>
+          <section id="projects">
+            <h2>Projects</h2>
+
+
+
           </section>
           {recentPosts.length > 0 && <Hr />}
         </>
