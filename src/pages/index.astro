@@ -43,6 +43,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         <>
           <section id="education">
             <h2>Education</h2>
+
+            <div class="empty-line"></div>
+
             <h3>Drexel University</h3>
             <p>
             Bachelor of Science in Computer Science
@@ -173,4 +176,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   .all-posts-btn-wrapper {
     @apply my-8 text-center;
   }
+  .empty-line {
+  height: 20px; /* Adjust the height as needed */
+}
 </style>
