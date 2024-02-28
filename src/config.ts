@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Joseph Seagal",
   desc: "",
   title: "Joseph Seagal",
-  ogImage: "JS2.png",
+  ogImage: "JS2.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
