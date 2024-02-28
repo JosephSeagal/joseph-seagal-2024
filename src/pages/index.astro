@@ -114,8 +114,10 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
             <div class="empty-line"></div>
             
-            <span><h3>National Board of Medical Examiners</h3></span>
-            <span>(<a href="https://www.nbme.org/"><span class="orange-text">www.nbme.org</span></a>)</span>
+            <div>
+              <div id ="titleLabels"?<h3>National Board of Medical Examiners</h3></div>
+              (<a href="https://www.nbme.org/"><span class="orange-text">www.nbme.org</span></a>)
+            </div>
 
             <i>Collaborative Services Engineer (Apr. 2023 - Sep. 2023)</i>
             <ul>
@@ -290,9 +292,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   //color: red; /* or whatever color you prefer */
   }
 
-  .label {
-     display: inline-block;
-     width: 200px; // or whatever
+  #titleLabels {
+   display:inline;
   }
 
 </style>
