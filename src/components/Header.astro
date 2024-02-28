@@ -17,12 +17,19 @@ const { activeNav } = Astro.props;
       <a href="/" class="logo whitespace-nowrap">
         {
           LOGO_IMAGE.enable ? (
+{/*
             <img
               src={`/assets/${LOGO_IMAGE.svg ? "logo.svg" : "logo.png"}`}
               alt={SITE.title}
               width={LOGO_IMAGE.width}
               height={LOGO_IMAGE.height}
             />
+*/}
+            style={{
+            width: `${LOGO_IMAGE.width}px`,
+            height: `${LOGO_IMAGE.height}px`,
+            backgroundColor: 'gray', // Set your desired background color here
+            }}
           ) : (
             SITE.title
           )
@@ -55,6 +62,7 @@ const { activeNav } = Astro.props;
           </svg>
         </button>
         <ul id="menu-items" class="display-none sm:flex">
+{/*
           <li>
             <a href="/posts/" class={activeNav === "posts" ? "active" : ""}>
               Posts
@@ -89,6 +97,7 @@ const { activeNav } = Astro.props;
               <span class="sr-only">Search</span>
             </LinkButton>
           </li>
+*/}
           {
             SITE.lightAndDarkMode && (
               <li>
