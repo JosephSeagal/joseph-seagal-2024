@@ -101,15 +101,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         <>
           <section id="experience">
             <h2>Experience</h2>
-            <ul>
-              {featuredPosts.map(({ data, slug }) => (
-                <Card
-                  href={`/posts/${slug}/`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
+            
+
+
           </section>
           {recentPosts.length > 0 && <Hr />}
         </>
@@ -151,7 +145,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply pb-6 pt-8;
   }
   #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl text-center;
   }
   #hero .rss-link {
     @apply mb-6;
