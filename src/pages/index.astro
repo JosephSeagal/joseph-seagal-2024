@@ -28,8 +28,16 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         <div class="social-wrapper">
             <div class="social-links">Phone Number:</div>
             (267) 709 - 0112
+        </div>
+      }
+      {
+        <div class="social-wrapper">
             <div class="social-links">Email:</div>
             <a href="mailto:josephseagal0@gmail.com">josephseagal0@gmail.com</a>
+        </div>
+      }
+      {
+        <div class="social-wrapper">
             <div class="social-links">LinkedIn:</div>
             <a href="https://www.linkedin.com/in/your-profile">joseph-seagal</a>
         </div>
@@ -152,8 +160,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply pb-6 pt-8;
   }
   #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
-    text-align: center;
+    @apply my-4 inline-block text-3xl font-bold text-center; /* Added text-center */
+    sm:my-8 sm:text-5xl;
   }
   #hero .rss-link {
     @apply mb-6;
