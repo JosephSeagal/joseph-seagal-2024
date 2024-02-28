@@ -1,11 +1,11 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://www.josephseagal.com/", // replace this with your deployed domain
-  author: "Sat Naing",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  website: "https://josephseagal.com/", // replace this with your deployed domain
+  author: "Joseph Seagal",
+  desc: "",
   title: "Joseph Seagal",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "JS2.png",
   lightAndDarkMode: true,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
