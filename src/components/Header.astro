@@ -25,11 +25,13 @@ const { activeNav } = Astro.props;
               height={LOGO_IMAGE.height}
             />
 */}
-            style={{
-            width: `${LOGO_IMAGE.width}px`,
-            height: `${LOGO_IMAGE.height}px`,
-            backgroundColor: 'gray', // Set your desired background color here
-            }}
+            <div 
+              style={{
+              width: `${LOGO_IMAGE.width}px`,
+              height: `${LOGO_IMAGE.height}px`,
+              backgroundColor: 'gray', // Set your desired background color here
+              }}
+            />
           ) : (
             SITE.title
           )
