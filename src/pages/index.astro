@@ -9,6 +9,7 @@ import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SOCIALS } from "@config";
+import { IconDownload } from "@tabler/icons-react";
 
 const posts = await getCollection("blog");
 
@@ -209,9 +210,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   
       <a href="/JosephSeagalResume.pdf" download >
       Download Resume
-        <svg xmlns="http://www.w3.org/2000/svg">
-          <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
-        </svg>
+      <IconDownload />
       </a>
       <div class="empty-line"></div>
     </div>
