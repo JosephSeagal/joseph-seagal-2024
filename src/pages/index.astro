@@ -24,22 +24,26 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <main id="main-content">
     <section id="hero">
       <h1>Joseph Seagal</h1>
+      <p>
+      
+      </p>
       {
         <div class="social-wrapper">
-            <div class="social-links">Phone Number:</div>
-            (267) 709 - 0112
+          <div class="social-links">Phone Number:</div>
+          (267) 709 - 0112
         </div>
       }
       {
         <div class="social-wrapper">
-            <div class="social-links">Email:</div>
-            <a href="mailto:josephseagal0@gmail.com">josephseagal0@gmail.com</a>
+          <div class="social-links">Email:</div>
+          <a href="mailto:josephseagal0@gmail.com"><span class="orange-text">josephseagal0@gmail.com</span></a>
         </div>
       }
       {
         <div class="social-wrapper">
-            <div class="social-links">LinkedIn:</div>
-            <a href="https://www.linkedin.com/in/joseph-seagal">joseph-seagal</a>
+          <div class="social-links">LinkedIn:</div>
+          
+          <a href="https://www.linkedin.com/in/joseph-seagal"><span class="orange-text">joseph-seagal</span></a>
         </div>
       }
 
@@ -189,5 +193,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
   .empty-line {
   height: 20px; /* Adjust the height as needed */
-}
+  }
+  .orange-text {
+  color: orange;
+  }
+
 </style>
